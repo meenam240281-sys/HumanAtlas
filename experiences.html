@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience Map – HumanAtlas.world</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">HumanAtlas.world</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="experiences.html" class="active">Experience Map</a>
+                <a href="emotions.html">Emotion Dictionary</a>
+                <a href="perspectives.html">Perspective Switcher</a>
+                <a href="cultures.html">Cultural Lens</a>
+                <a href="about.html">About</a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="page-header">
+            <h1 class="serif">Experience Map</h1>
+            <p class="subtitle">Universal moments that form the shared geography of being human</p>
+        </header>
+
+        <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all">All Experiences</button>
+            <button class="filter-btn" data-filter="growth">Growth & Learning</button>
+            <button class="filter-btn" data-filter="connection">Connection & Distance</button>
+            <button class="filter-btn" data-filter="transition">Transitions</button>
+            <button class="filter-btn" data-filter="quiet">Quiet Moments</button>
+        </div>
+
+        <div class="experiences-grid">
+            <!-- First Failure -->
+            <article class="experience-card" data-category="growth">
+                <h3>First Failure</h3>
+                <p class="experience-description">
+                    The initial encounter with a limit, not as a barrier but as a contour of reality. 
+                    That moment when effort meets outcome, and they don't align. The taste is particular— 
+                    metallic disappointment mixed with the sudden knowledge that some paths simply end.
+                </p>
+                <div class="experience-meta">
+                    <span class="tag">Universal</span>
+                    <span class="tag">Growth</span>
+                </div>
+            </article>
+
+            <!-- Loneliness -->
+            <article class="experience-card" data-category="connection">
+                <h3>Loneliness</h3>
+                <p class="experience-description">
+                    Not merely being alone, but feeling the space between yourself and others as palpable distance. 
+                    It can happen in crowds, in relationships, in families. The peculiar awareness that consciousness 
+                    is ultimately solitary, yet the yearning for it not to be so.
+                </p>
+                <div class="experience-meta">
+                    <span class="tag">Universal</span>
+                    <span class="tag">Connection</span>
+                </div>
+            </article>
+
+            <!-- Quiet Success -->
+            <article class="experience-card" data-category="quiet">
+                <h3>Quiet Success</h3>
+                <p class="experience-description">
+                    Achievement that arrives without fanfare. A personal milestone reached, a private battle won. 
+                    The satisfaction is internal, unannounced. It carries a particular quality of peace—the knowledge 
+                    that you have become slightly more capable than you were before.
+                </p>
+                <div class="experience-meta">
+                    <span class="tag">Universal</span>
+                    <span class="tag">Quiet</span>
+                </div>
+            </article>
+
+            <!-- Waiting -->
+            <article class="experience-card" data-category="quiet">
+                <h3>Waiting</h3>
+                <p class="experience-description">
+                    Suspended time. The mind caught between what was and what might be. In hospitals, airports, 
+                    response windows. Time thickens. Attention turns inward or becomes hyper-aware of small details 
+                    in the environment. A practice in patience or a lesson in powerlessness.
+                </p>
+                <div class="experience-meta">
+                    <span class="tag">Universal</span>
+                    <span class="tag">Quiet</span>
+                </div>
+            </article>
+
+            <!-- Being Misunderstood -->
+            <article class="experience-card" data-category="connection">
+                <h3>Being Misunderstood</h3>
+                <p class="experience-description">
+                    When your words or actions land in another's consciousness differently than they left yours. 
+                    The gap between intention and interpretation becomes visible. Sometimes corrigible with effort, 
+                    sometimes a permanent divergence in understanding between two people.
+                </p>
+                <div class="experience-meta">
+                    <span class="tag">Universal</span>
+                    <span class="tag">Connection</span>
+                </div>
+            </article>
+
+            <!-- Letting Go -->
+            <article class="experience-card" data-category="transition">
+                <h3>Letting Go</h3>
+                <p class="experience-description">
+                    The conscious or unconscious release of something once held tightly: a person, a dream, 
+                    an identity, a grievance. Not always voluntary. Often accompanied by a sense of both loss 
+                    and lightness—the strange relief that comes when you stop carrying what was never meant to be carried forever.
+                </p>
+                <div class="experience-meta">
+                    <span class="tag">Universal</span>
+                    <span class="tag">Transition</span>
+                </div>
+            </article>
+
+            <!-- Hope -->
+            <article class="experience-card" data-category="growth">
+                <h3>Hope</h3>
+                <p class="experience-description">
+                    The quiet orientation toward possibility. Not naive optimism, but the capacity to imagine 
+                    a future different from the present. Sometimes fragile, sometimes stubborn. It exists in 
+                    tension with evidence, choosing to lean forward when leaning back would be easier.
+                </p>
+                <div class="experience-meta">
+                    <span class="tag">Universal</span>
+                    <span class="tag">Growth</span>
+                </div>
+            </article>
+
+            <!-- Regret -->
+            <article class="experience-card" data-category="transition">
+                <h3>Regret</h3>
+                <p class="experience-description">
+                    The backward glance at a road not taken, a word not spoken, an action not withheld. 
+                    The peculiar pain of knowing you contributed to an outcome you wish were different. 
+                    Sometimes a teacher, sometimes a ghost. Always a reminder of your own agency in the narrative of your life.
+                </p>
+                <div class="experience-meta">
+                    <span class="tag">Universal</span>
+                    <span class="tag">Transition</span>
+                </div>
+            </article>
+
+            <!-- Additional experiences -->
+            <article class="experience-card" data-category="quiet">
+                <h3>Dawn</h3>
+                <p class="experience-description">
+                    That liminal hour when night reluctantly gives way. The world holds its breath. 
+                    Light arrives gently, revealing shapes before details. A daily reminder that endings 
+                    contain beginnings, that darkness is never permanent.
+                </p>
+                <div class="experience-meta">
+                    <span class="tag">Universal</span>
+                    <span class="tag">Quiet</span>
+                </div>
+            </article>
+
+            <article class="experience-card" data-category="connection">
+                <h3>Unexpected Kindness</h3>
+                <p class="experience-description">
+                    A gesture from another that arrives precisely when needed, though you hadn't asked. 
+                    The sudden awareness that someone noticed, someone cared enough to act. It often feels 
+                    like grace—unearned, unwarranted, but deeply human.
+                </p>
+                <div class="experience-meta">
+                    <span class="tag">Universal</span>
+                    <span class="tag">Connection</span>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>HumanAtlas.world – A reflective exploration of shared human experience</p>
+            <p class="footer-links">
+                <a href="index.html">Home</a> · 
+                <a href="about.html">Purpose</a> · 
+                <a href="cultures.html">Cultural Lens</a>
+            </p>
+            <p class="copyright">© HumanAtlas.world – Content designed to remain relevant across generations</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
