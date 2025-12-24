@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perspective Switcher – HumanAtlas.world</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">HumanAtlas.world</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="experiences.html">Experience Map</a>
+                <a href="emotions.html">Emotion Dictionary</a>
+                <a href="perspectives.html" class="active">Perspective Switcher</a>
+                <a href="cultures.html">Cultural Lens</a>
+                <a href="about.html">About</a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="page-header">
+            <h1 class="serif">Perspective Switcher</h1>
+            <p class="subtitle">How universal experiences shift across the lifespan</p>
+        </header>
+
+        <div class="perspective-intro">
+            <p>
+                The same experience—failure, love, loss, hope—lands differently depending on where we stand 
+                in our lives. This is not about which perspective is "right," but about understanding how 
+                time reshapes meaning.
+            </p>
+        </div>
+
+        <div class="perspective-controls">
+            <div class="perspective-buttons">
+                <button class="perspective-btn active" data-perspective="child">Child (5-12)</button>
+                <button class="perspective-btn" data-perspective="teen">Teenager (13-19)</button>
+                <button class="perspective-btn" data-perspective="young">Young Adult (20-35)</button>
+                <button class="perspective-btn" data-perspective="middle">Middle Age (36-65)</button>
+                <button class="perspective-btn" data-perspective="elder">Elder (66+)</button>
+            </div>
+        </div>
+
+        <div class="perspective-content">
+            <div class="perspective-view active" id="child-perspective">
+                <h2>Child Perspective</h2>
+                <p class="perspective-description">
+                    The world is immediate, sensory, and defined by clear boundaries. Time stretches and compresses 
+                    in unfamiliar ways—an hour can feel like a day, a summer like a lifetime. Relationships are 
+                    understood in concrete terms: who is kind, who plays fair, who listens.
+                </p>
+                
+                <div class="perspective-examples">
+                    <div class="example">
+                        <h4>First Failure</h4>
+                        <p>Often experienced as a global statement about ability rather than a specific outcome. "I failed at this" easily becomes "I am a failure." The emotion is raw and undiluted by perspective.</p>
+                    </div>
+                    <div class="example">
+                        <h4>Loneliness</h4>
+                        <p>A physical feeling of emptiness. Often expressed through behavior rather than words—clinginess, withdrawal, or creating imaginary companions. The concept of "temporary" is difficult to grasp.</p>
+                    </div>
+                    <div class="example">
+                        <h4>Hope</h4>
+                        <p>Often tied to specific, tangible outcomes: a toy, a visit, a birthday. The timeline is short, the expectations concrete. Disappointment is acute but often quickly replaced by new hope.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="perspective-view" id="teen-perspective">
+                <h2>Teenager Perspective</h2>
+                <p class="perspective-description">
+                    Identity formation becomes central. The social world expands dramatically, bringing both connection 
+                    and comparison. Emotions are intense, often feeling permanent in the moment. The future begins 
+                    to take shape as both promise and pressure.
+                </p>
+                
+                <div class="perspective-examples">
+                    <div class="example">
+                        <h4>First Failure</h4>
+                        <p>Often intertwined with identity and social standing. A failure can feel like it defines who you are in the eyes of peers. The stakes feel existential.</p>
+                    </div>
+                    <div class="example">
+                        <h4>Loneliness</h4>
+                        <p>Particularly painful amidst social abundance—feeling alone in a crowd, misunderstood by family, or different from peers. Can drive both conformity and rebellion.</p>
+                    </div>
+                    <div class="example">
+                        <h4>Hope</h4>
+                        <p>Often directed toward future independence, self-definition, and escape from current constraints. Can be both exhilarating and terrifying in its openness.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="perspective-view" id="young-perspective">
+                <h2>Young Adult Perspective</h2>
+                <p class="perspective-description">
+                    The weight of responsibility increases alongside freedom. Life paths diverge. Comparison with peers 
+                    becomes more nuanced—careers, relationships, life choices. The tension between ambition and contentment 
+                    often emerges.
+                </p>
+                
+                <div class="perspective-examples">
+                    <div class="example">
+                        <h4>First Failure</h4>
+                        <p>Now has practical consequences—career setbacks, relationship endings. The learning from failure becomes more deliberate, though no less painful.</p>
+                    </div>
+                    <div class="example">
+                        <h4>Loneliness</h4>
+                        <p>Can emerge amidst busyness and achievement. The loneliness of not having found "your people" or "your path." Sometimes a loneliness of authenticity—showing your true self and finding few who understand.</p>
+                    </div>
+                    <div class="example">
+                        <h4>Hope</h4>
+                        <p>Often project-oriented: hope for career success, for finding a partner, for establishing a home. The timeline extends but remains relatively near.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="perspective-view" id="middle-perspective">
+                <h2>Middle Age Perspective</h2>
+                <p class="perspective-description">
+                    Reflection on paths taken and not taken. Awareness of time's passage becomes more acute. Responsibilities 
+                    often peak—children, aging parents, career demands. The question "What have I accomplished?" gains weight.
+                </p>
+                
+                <div class="perspective-examples">
+                    <div class="example">
+                        <h4>First Failure</h4>
+                        <p>Viewed within a longer arc. Failures become data points in a life narrative rather than defining events. Regret about past failures may surface alongside acceptance.</p>
+                    </div>
+                    <div class="example">
+                        <h4>Loneliness</h4>
+                        <p>Can emerge from changing family structures, friendships that have drifted, or the sense of being misunderstood in long-term relationships. Sometimes a loneliness of responsibility—carrying burdens others don't see.</p>
+                    </div>
+                    <div class="example">
+                        <h4>Hope</h4>
+                        <p>Shifts toward different domains: hope for children's wellbeing, for meaningful legacy, for peaceful years ahead. Often tempered with realism born of experience.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="perspective-view" id="elder-perspective">
+                <h2>Elder Perspective</h2>
+                <p class="perspective-description">
+                    The arc of a life becomes visible in retrospect. Time becomes both precious and expansive. Relationships 
+                    with younger generations often bring both joy and the poignancy of watching time cycle. The focus often 
+                    shifts from achievement to meaning, from accumulation to essence.
+                </p>
+                
+                <div class="perspective-examples">
+                    <div class="example">
+                        <h4>First Failure</h4>
+                        <p>Seen as part of the necessary texture of a life. The specific sting has often faded, replaced by understanding of its role in shaping character or redirecting paths.</p>
+                    </div>
+                    <div class="example">
+                        <h4>Loneliness</h4>
+                        <p>Often accompanies loss—of peers, of partners, of physical capacity. Can be mixed with appreciation for solitude and the richness of memory. Sometimes a loneliness of being a living archive in a changing world.</p>
+                    </div>
+                    <div class="example">
+                        <h4>Hope</h4>
+                        <p>Often extends beyond one's own life—hope for future generations, for the world left behind. Can be quiet and internal, focused on peace, reconciliation, or simple daily pleasures.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>HumanAtlas.world – A reflective exploration of shared human experience</p>
+            <p class="footer-links">
+                <a href="index.html">Home</a> · 
+                <a href="experiences.html">Experiences</a> · 
+                <a href="cultures.html">Cultural Lens</a>
+            </p>
+            <p class="copyright">© HumanAtlas.world – Content designed to remain relevant across generations</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Perspective switching
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.perspective-btn');
+            const views = document.querySelectorAll('.perspective-view');
+            
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Update active button
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Hide all views
+                    views.forEach(view => view.classList.remove('active'));
+                    
+                    // Show selected view
+                    const perspective = this.getAttribute('data-perspective');
+                    document.getElementById(`${perspective}-perspective`).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
